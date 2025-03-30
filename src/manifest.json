@@ -13,7 +13,18 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "type": "module"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["features/filterJobs.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    },
+    {
+      "resources": ["localSettings.js"],
+      "matches": ["http://*/*", "https://*/*"]
     }
   ],
   "host_permissions": [
