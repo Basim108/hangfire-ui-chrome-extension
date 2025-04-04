@@ -18,7 +18,7 @@ chrome.runtime.onMessage.addListener(message => {
 
 function applyFeatures(env) {
     logger.log('page is a hangfire dashboard', env);
-    if (filterJobs.isApplied()) {
+    if (!filterJobs.isApplied()) {
         filterJobs.apply()
     }
     logger.log('Tab Activated');
