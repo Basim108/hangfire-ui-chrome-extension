@@ -4,6 +4,10 @@ bootstrap.js
 bootstrap.json
 bootstrap.jsonp
 build/
+dist/
+node_modules/
+.idea/
+.vs/
 classic.json
 classic.jsonp
 ext/
