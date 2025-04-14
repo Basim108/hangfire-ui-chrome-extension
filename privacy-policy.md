@@ -18,7 +18,7 @@ The Extension operates solely on your local browser and does not communicate wit
 
 **Permissions**
 
-> The Extension requests permission to "access your tabs" for the sole purpose of to extend functionality of a Hangfire UI dashboard pages. This permission is only used locally within your browser and no data related to your tabs is collected or transmitted.
+> The Extension does not require any specific permissions.
 
 **Third-Party Services**
 

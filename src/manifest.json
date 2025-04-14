@@ -4,15 +4,12 @@
   "version": "1.0.0",
   "author": "Basim Al-Jawahery",
   "description": "Provide additional features to Hangfire UI Dashboard.",
-  "permissions": [
-    "tabs"
-  ],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
+      "matches": ["http://localhost:5092/*", "https://jobs.test.priceme.com/*", "https://jobs.pve.priceme.com/*"],
       "js": ["content.js"],
       "type": "module"
     }
@@ -20,16 +17,17 @@
   "web_accessible_resources": [
     {
       "resources": ["features/filterJobs.js"],
-      "matches": ["http://*/*", "https://*/*"]
+      "matches": ["http://localhost:5092/*", "https://jobs.test.priceme.com/*", "https://jobs.pve.priceme.com/*"]
     },
     {
       "resources": ["localSettings.js"],
-      "matches": ["http://*/*", "https://*/*"]
+      "matches": ["http://localhost:5092/*", "https://jobs.test.priceme.com/*", "https://jobs.pve.priceme.com/*"]
     }
   ],
   "host_permissions": [
-    "http://*/*",
-    "https://*/*"
+    "http://localhost:5092/*",
+    "https://jobs.test.priceme.com//*",
+    "https://jobs.pve.priceme.com/*"
   ],
   "icons": {
     "16": "images/icon-16.png",
